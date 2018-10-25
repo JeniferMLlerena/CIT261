@@ -9,33 +9,31 @@ body {
     height: 100vh;
     /*   background-color: black; */
     background-image: url("http://wallpaperlayer.com/img/2015/1/blurred-wallpaper-background-7591-7884-hd-wallpapers.jpg");
-    color: white;
-    
+    color: white;    
     display: flex;
     justify-content: center;
 }
 
 .container {
-    background-color: aliceblue;
-    width: 70%;
-    height: 25em;
+    /*background-color: aliceblue;*/
+    width: 50vh;
     display: flex;
-    align-self: center;
-    al
-    opacity: 0.8;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container p {
+    line-height: 0;
+    margin-top: 2vh;
 }
 
 .container img{
-    width: 100%;    
+    width: 25vh;    
     border-radius: 100px;
     background: lightblue;
 }
 
 .box {
-    opacity: 6;
-    width: 25%; 
-    padding: 20px;
-    margin: 2em;
     text-align: center;
     color: red;
     font-size: 1.5em;

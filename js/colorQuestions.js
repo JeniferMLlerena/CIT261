@@ -25,8 +25,9 @@ Quiz.prototype.guess = function (answer) {
     this.questionIndex++;
 }
 
-function Question(text, choices, answer) {
+function Question(text, image, choices, answer) {
     this.text = text;
+    this.image = image;
     this.choices = choices;
     this.answer = answer;
 }
@@ -42,6 +43,8 @@ function populate() {
         var element = document.getElementById('question');
         element.innerHTML = quiz.getQuestionIndex().text;
 
+        var element1 = document.getElementById('imagen');
+        element1.src = quiz.getQuestionIndex().image;
         //show choices
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
@@ -79,11 +82,11 @@ function showScores() {
 
 
 var questions = [
-	new Question("Who was the last head of state of Soviet Union?", ["Mikhail Kalinin", "Mikhail Gorbachev", "Yosef Stalin", "Yuri Andropov"], "Mikhail Gorbachev"),
-	new Question("Which year Soviet Union broke apart", ["1989", "1995", "1991", "1985"], "1991"),
-	new Question("How many countries achieved secession from the Soviet Union", ["19", "15", "14", "20"], "14"),
-	new Question("How many countries achieved secession from the Soviet Union", ["19", "15", "14", "20"], "14"),
-	new Question("Name of the prime Intelligence org during Soviet era?", ["FSB", "CIA", "Gestapo", "KGB"], "KGB"),
+	new Question("What color is this?", "../Images/colors/blue.jpg" , ["red", "blue", "orange", "yellow"], "blue"),
+	new Question("What color is this?", "../Images/colors/yellow.jpg" , ["yellow", "blue", "orange", "green"], "yellow"),
+	new Question("What color is this?", "../Images/colors/red.jpg" , ["red", "green", "orange", "yellow"], "red"),
+	new Question("What color is this?", "../Images/colors/orange.jpg" , ["red", "blue", "orange", "yellow"], "orange"),
+	new Question("What color is this?", "../Images/colors/green.jpg" , ["red", "green", "orange", "yellow"], "green"),
 ];
 
 var quiz = new Quiz(questions);
