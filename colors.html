@@ -1,43 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Color Quiz</title>
-	<link rel="stylesheet" href="style.css">
-	
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-  <link href="css/colors.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Color Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/questions.css" rel="stylesheet" type="text/css">
 
 </head>
-<body>
-  <button type='button' onclick='location.reload()'>Reload</button>
-	<div class="container">
-		<div id="quiz">
-			<h1>Colors</h1>
-			
-			<hr style="margin-bottom: 5px">
 
-			<p id="question"></p>
-			<div>
-			    <img id="imagen" src="Images/colors/yellow.png" />
+<body>
+    <div class="container">
+        <div id="quiz">
+            <h1>Colors</h1>
+
+            <hr style="margin-bottom: 5px">
+
+            <p id="question"></p>
+            <div>
+                <img id="imagen" src="Images/colors/colors.png" />
             </div>
-			<div class="button-grp">
-				<button id="btn0"><span id="choice0"></span></button>
-				<button id="btn1"><span id="choice1"></span></button>
-				<button id="btn2"><span id="choice2"></span></button>
-				<button id="btn3"><span id="choice3"></span></button>
-			</div>
-			
-			<hr style="margin-top: 50px">
-			
-			<footer>
-				<p id="progress">Question x of y</p>
-			</footer>
-		</div>
-	</div>
-  <script src="js/colorQuestions.js"></script>
+            <div class="button-grp">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 50px">
+
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/colorQuestions.js"></script>
 </body>
+
 </html>

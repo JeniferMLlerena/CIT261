@@ -25,9 +25,10 @@ Quiz.prototype.guess = function (answer) {
     this.questionIndex++;
 }
 
-function Question(text, image, choices, answer) {
+function Question(text, image, sounds, choices, answer) {
     this.text = text;
     this.image = image;
+    this.sounds = sounds;
     this.choices = choices;
     this.answer = answer;
 }
@@ -43,8 +44,8 @@ function populate() {
         var element = document.getElementById('question');
         element.innerHTML = quiz.getQuestionIndex().text;
 
-        var element1 = document.getElementById('imagen');
-        element1.src = quiz.getQuestionIndex().image;
+        var element1 = document.getElementById('sound');
+        element1.src = quiz.getQuestionIndex().sounds;
         //show choices
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
@@ -85,11 +86,11 @@ function showScores() {
 
 
 var questions = [
-	new Question("What color is this?", "../Images/colors/blue.jpg" , ["red", "blue", "orange", "yellow"], "blue"),
-	new Question("What color is this?", "../Images/colors/yellow.jpg" , ["yellow", "blue", "orange", "green"], "yellow"),
-	new Question("What color is this?", "../Images/colors/red.jpg" , ["red", "green", "orange", "yellow"], "red"),
-	new Question("What color is this?", "../Images/colors/orange.jpg" , ["red", "blue", "orange", "yellow"], "orange"),
-	new Question("What color is this?", "../Images/colors/green.jpg" , ["red", "green", "orange", "yellow"], "green"),
+	new Question("What vowel is this?", "../Images/ABC/a.jpg" , "../sounds/ABC/a.ogg", ["a", "e", "o", "u"], "a"),
+	new Question("What vowel is this?", "../Images/ABC/e.jpg" , "../sounds/ABC/e.ogg", ["i", "e", "o", "a"], "e"),
+    new Question("What vowel is this?", "../Images/ABC/i.jpg" , "../sounds/ABC/i.ogg", ["u", "e", "o", "i"], "i"),
+    new Question("What vowel is this?", "../Images/ABC/o.jpg" , "../sounds/ABC/o.ogg", ["e", "i", "o", "u"], "o"),
+    new Question("What vowel is this?", "../Images/ABC/u.jpg" , "../sounds/ABC/u.ogg", ["a", "u", "o", "i"], "u"),
 ];
 
 var quiz = new Quiz(questions);

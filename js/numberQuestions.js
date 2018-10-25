@@ -85,11 +85,16 @@ function showScores() {
 
 
 var questions = [
-	new Question("What color is this?", "../Images/colors/blue.jpg" , ["red", "blue", "orange", "yellow"], "blue"),
-	new Question("What color is this?", "../Images/colors/yellow.jpg" , ["yellow", "blue", "orange", "green"], "yellow"),
-	new Question("What color is this?", "../Images/colors/red.jpg" , ["red", "green", "orange", "yellow"], "red"),
-	new Question("What color is this?", "../Images/colors/orange.jpg" , ["red", "blue", "orange", "yellow"], "orange"),
-	new Question("What color is this?", "../Images/colors/green.jpg" , ["red", "green", "orange", "yellow"], "green"),
+	new Question("What number is this?", "../Images/numbers/zero.png" , ["four", "zero", "one", "five"], "zero"),
+	new Question("What number is this?", "../Images/numbers/five.png" , ["five", "zero", "one", "two"], "five"),
+	new Question("What number is this?", "../Images/numbers/two.png" , ["nine", "two", "one", "zero"], "two"),
+	new Question("What number is this?", "../Images/numbers/nine.png" , ["four", "zero", "one", "nine"], "nine"),
+	new Question("What number is this?", "../Images/numbers/three.png" , ["three", "two", "eight", "six"], "three"),
+	new Question("What number is this?", "../Images/numbers/seven.png" , ["four", "seven", "two", "zero"], "seven"),
+	new Question("What number is this?", "../Images/numbers/four.png" , ["zero", "three", "four", "five"], "four"),
+	new Question("What number is this?", "../Images/numbers/one.png" , ["one", "three", "two", "zero"], "one"),
+	new Question("What number is this?", "../Images/numbers/six.png" , ["seven", "zero", "six", "five"], "six"),
+	new Question("What number is this?", "../Images/numbers/eight.png" , ["four", "eight", "one", "two"], "eight"),
 ];
 
 var quiz = new Quiz(questions);
