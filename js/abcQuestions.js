@@ -86,7 +86,7 @@ function showScores() {
 
 
 var questions = [
-	new Question("What vowel is this?", "../Images/ABC/a.jpg" , "../sounds/ABC/a.ogg", ["a", "e", "o", "u"], "a"),
+	new Question("What vowel is this?", "../Images/ABC/a.jpg" , "../../CIT261/sounds/ABC/a.ogg", ["a", "e", "o", "u"], "a"),
 	new Question("What vowel is this?", "../Images/ABC/e.jpg" , "../sounds/ABC/e.ogg", ["i", "e", "o", "a"], "e"),
     new Question("What vowel is this?", "../Images/ABC/i.jpg" , "../sounds/ABC/i.ogg", ["u", "e", "o", "i"], "i"),
     new Question("What vowel is this?", "../Images/ABC/o.jpg" , "../sounds/ABC/o.ogg", ["e", "i", "o", "u"], "o"),
