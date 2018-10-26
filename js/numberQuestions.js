@@ -78,7 +78,7 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your Scores: " + quiz.score + "</h2>";
     gameOverHTML += "<button type='button' onclick='location.reload()'>Play again!</button>";
     /*gameOverHTML += " <a href='../home.html'><img src='../Images/home-btn.png' width='10' height='20'></a>Home";*/
-    gameOverHTML += " <a href='../home.html'>Go Home</a>";
+    gameOverHTML += " <a href='../../CIT261/home.html'>Go Home</a>";
     var element = document.getElementById('quiz');
     element.innerHTML = gameOverHTML;
 }
