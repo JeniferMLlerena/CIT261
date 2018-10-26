@@ -85,11 +85,11 @@ function showScores() {
 
 
 var questions = [
-	new Question("What color is this?", "../Images/colors/blue.jpg" , ["red", "blue", "orange", "yellow"], "blue"),
-	new Question("What color is this?", "../Images/colors/yellow.jpg" , ["yellow", "blue", "orange", "green"], "yellow"),
-	new Question("What color is this?", "../Images/colors/red.jpg" , ["red", "green", "orange", "yellow"], "red"),
-	new Question("What color is this?", "../Images/colors/orange.jpg" , ["red", "blue", "orange", "yellow"], "orange"),
-	new Question("What color is this?", "../Images/colors/green.jpg" , ["red", "green", "orange", "yellow"], "green"),
+	new Question("What color is this?", "../../CIT261/Images/colors/blue.jpg" , ["red", "blue", "orange", "yellow"], "blue"),
+	new Question("What color is this?", "../../CIT261/Images/colors/yellow.jpg" , ["yellow", "blue", "orange", "green"], "yellow"),
+	new Question("What color is this?", "../../CIT261/Images/colors/red.jpg" , ["red", "green", "orange", "yellow"], "red"),
+	new Question("What color is this?", "../../CIT261/Images/colors/orange.jpg" , ["red", "blue", "orange", "yellow"], "orange"),
+	new Question("What color is this?", "../../CIT261/Images/colors/green.jpg" , ["red", "green", "orange", "yellow"], "green"),
 ];
 
 var quiz = new Quiz(questions);

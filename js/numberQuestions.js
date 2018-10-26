@@ -85,16 +85,16 @@ function showScores() {
 
 
 var questions = [
-	new Question("What number is this?", "../Images/numbers/zero.png" , ["four", "zero", "one", "five"], "zero"),
-	new Question("What number is this?", "../Images/numbers/five.png" , ["five", "zero", "one", "two"], "five"),
-	new Question("What number is this?", "../Images/numbers/two.png" , ["nine", "two", "one", "zero"], "two"),
-	new Question("What number is this?", "../Images/numbers/nine.png" , ["four", "zero", "one", "nine"], "nine"),
-	new Question("What number is this?", "../Images/numbers/three.png" , ["three", "two", "eight", "six"], "three"),
-	new Question("What number is this?", "../Images/numbers/seven.png" , ["four", "seven", "two", "zero"], "seven"),
-	new Question("What number is this?", "../Images/numbers/four.png" , ["zero", "three", "four", "five"], "four"),
-	new Question("What number is this?", "../Images/numbers/one.png" , ["one", "three", "two", "zero"], "one"),
-	new Question("What number is this?", "../Images/numbers/six.png" , ["seven", "zero", "six", "five"], "six"),
-	new Question("What number is this?", "../Images/numbers/eight.png" , ["four", "eight", "one", "two"], "eight"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/zero.png" , ["four", "zero", "one", "five"], "zero"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/five.png" , ["five", "zero", "one", "two"], "five"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/two.png" , ["nine", "two", "one", "zero"], "two"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/nine.png" , ["four", "zero", "one", "nine"], "nine"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/three.png" , ["three", "two", "eight", "six"], "three"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/seven.png" , ["four", "seven", "two", "zero"], "seven"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/four.png" , ["zero", "three", "four", "five"], "four"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/one.png" , ["one", "three", "two", "zero"], "one"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/six.png" , ["seven", "zero", "six", "five"], "six"),
+	new Question("What number is this?", "../../CIT261/Images/numbers/eight.png" , ["four", "eight", "one", "two"], "eight"),
 ];
 
 var quiz = new Quiz(questions);
