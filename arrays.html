@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Working with arrays</title>
+    
+</head>
+
+<body>
+    <p>You are from:<span id="country">algun lugar</span></p>   
+    
+<script>
+    const name = ['Gary', 'Sarah', 'Dirk', 'Veronica'];
+    const colors = ['blue', 'green', 'red'];
+    const nums = [22, 12, 15, 10, 33, 57];
+    const country = ['USA', 'Spain', 'Peru', 'Brazil', 'Argentina'];
+
+    //example of for loop to traverse array
+    for (var i = 0; i < name.length; i++) {
+        console.log(name[i]);
+    }
+
+    //what we can do with an array console.dir();
+    console.dir(colors);
+
+    //example of for of loop to traverse array
+    for (let color of colors) {
+        console.log(nums);
+    }
+
+    nums.forEach(items => {
+        console.log(items)
+    });
+
+    //example of map
+    const newArray = nums.map(function(number) {
+        return number * -1;
+    });
+    console.log(newArray);
+
+    //example of map with arrow function declaration
+    const ngNumbers = nums.map(number => number * -1);
+
+    //Find an item in an array
+    for (var j = 0; j < country.length; j++) {
+        if (country[j] == "Peru") {
+            document.getElementById("country").innerHTML = "Peru";
+        }
+    }
+    
+    //Using the filter function
+    console.log(country.filter(checkCountry));
+    
+    function checkCountry(country){
+            return country == "Argentina";
+    }
+    
+    //more about filter not caring about lower or upper letters
+    const.filteredCountries = country.filter(item => {
+        return item.toLowerCase().indexOf("r")
+    })
+    
+</script> 
+</body>
+
+</html>
